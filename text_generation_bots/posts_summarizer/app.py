@@ -16,3 +16,4 @@ summarizer_chatbot=gr.ChatInterface(
     title="Summarizer",
     description="Summarize social media posts with the chatbot")
 
+summarizer_chatbot.launch(debug=True)
