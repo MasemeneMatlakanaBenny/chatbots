@@ -10,3 +10,9 @@ def news_summarizer(link,history):
   summary=summarizer(article_text,min_length=50,max_length=1000)
 
   return summary[0]['summary_text']
+  
+summarizer_chatbot=gr.ChatInterface(
+    fn=news_summarizer,
+    title="Summarizer",
+    description="Summarize social media posts with the chatbot")
+
