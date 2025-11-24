@@ -1,6 +1,10 @@
 import torch
 import gradio as gr
 from transformers import pipeline
+from web_scrapping import extract_article_text
+
+link=input("Enter the link of the post here:")
+
 
 qa_answer=qa_answer= pipeline("question-answering", model="distilbert/distilbert-base-uncased-distilled-squad")
 
